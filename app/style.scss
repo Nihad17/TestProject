@@ -358,7 +358,7 @@ body {
   margin-top: 30px;
   padding: 0px;
   z-index: 1;
-  width: 460px;
+  width: 380px;
 }
 
 .swiper-button-next,
@@ -385,16 +385,16 @@ body {
 
 .swiper-button-next {
   position: relative !important;
-  right: -60px !important;
+  // right: -60px !important;
   width: 40px !important;
-  right: -570px !important;
-  bottom: 150px !important;
+  right: -540px !important;
+  bottom: 120px !important;
 }
 
 .swiper-button-prev {
-  left: -151px !important;
+  left: -190px !important;
   width: 40px !important;
-  bottom: 128px !important;
+  bottom: 100px !important;
   transform: rotate(180deg);
   position: relative !important;
 }
@@ -457,14 +457,102 @@ body {
   position: relative;
 }
 
-.imgbutton {
-  max-width: 100%;
-  max-height: 100px;
+.swiper1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  margin-top: 30px;
+  padding: 0px;
+  z-index: 1;
+  width: 380px;
 }
 
-.general {
-  overflow: visible;
+.swiper1-button-next,
+.swiper1-rlt .swiper1-button-prev {
+  display: none;
+}
+
+.swiper1-button-next,
+.swiper1-button-prev {
   position: relative;
+  top: 50%;
+  z-index: 10;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper1-button-prev {
+  left: -145px;
+  width: 40px;
+  bottom: 136px;
+  transform: rotate(180deg);
+  position: relative;
+}
+.swiper1-button-next {
+  position: relative;
+  right: -60px;
+  width: 40px;
+  right: -470px;
+  bottom: 190px;
+}
+
+.swiper2 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  margin-top: 30px;
+  padding: 0px;
+  z-index: 1;
+  width: 380px;
+}
+
+.swiper2-button-next,
+.swiper2-rlt .swiper1-button-prev {
+  display: none;
+}
+
+.swiper2-button-next,
+.swiper2-button-prev {
+  position: relative;
+  top: 50%;
+  z-index: 10;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper2-button-prev {
+  left: -145px;
+  width: 40px;
+  bottom: 136px;
+  transform: rotate(180deg);
+  position: relative;
+}
+.swiper2-button-next {
+  position: relative;
+  right: -60px;
+  width: 40px;
+  right: -470px;
+  bottom: 190px;
 }
 
 // $breakpoint: (
@@ -511,7 +599,7 @@ body {
   }
 
   .overalltext {
-    left: 40px;
+    left: 80px;
   }
 
   .imagetext {
@@ -688,7 +776,7 @@ body {
   }
   .swiper-button-prev {
     width: 18px !important;
-    left: -261px !important;
+    left: -61px !important;
     bottom: 36px !important;
   }
   .swiperr {
@@ -703,6 +791,43 @@ body {
     width: 15px !important;
     left: -70px !important;
     bottom: 70px !important;
+  }
+  .swiper1 {
+    width: 180px;
+  }
+
+  .swiper1-button-prev {
+    left: -55px;
+    width: 18px;
+    bottom: 67px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper1-button-next {
+    position: relative;
+    right: -60px;
+    width: 18px;
+    right: -215px;
+    bottom: 120px;
+  }
+
+  .swiper2 {
+    width: 180px;
+  }
+
+  .swiper2-button-prev {
+    left: -45px;
+    width: 18px;
+    bottom: 69px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper2-button-next {
+    position: relative;
+    right: -60px;
+    width: 18px;
+    right: -205px;
+    bottom: 120px;
   }
 }
 
@@ -735,9 +860,11 @@ body {
   }
 
   .text-headerr {
-    font-size: 3px;
+    font-size: 9px;
   }
-
+  .overalltext {
+    left: 0;
+  }
   .imagetextmain {
     line-height: 100px;
     margin-bottom: 0px;
@@ -872,30 +999,69 @@ body {
     height: 100% !important;
   }
   .swiper {
-    width: 160px;
+    width: 260px;
   }
+
   .swiper-button-next {
-    width: 18px !important;
-    right: -215px !important;
-    bottom: 60px !important;
+    width: 20px !important;
+    right: -350px !important;
+    bottom: 90px !important;
   }
   .swiper-button-prev {
-    width: 18px !important;
-    left: -105px !important;
-    bottom: 36px !important;
+    width: 20px !important;
+    left: -115px !important;
+    bottom: 59px !important;
   }
   .swiperr {
-    width: 111px;
+    width: 191px;
   }
   .swiperr-button-next {
-    width: 15px !important;
-    right: -162px !important;
-    bottom: 120px !important;
+    width: 18px !important;
+    right: -287px !important;
+    bottom: 160px !important;
   }
   .swiperr-button-prev {
-    width: 15px !important;
-    left: -70px !important;
-    bottom: 70px !important;
+    width: 18px !important;
+    left: -130px !important;
+    bottom: 100px !important;
+  }
+
+  .swiper1 {
+    width: 260px;
+  }
+
+  .swiper1-button-prev {
+    left: -75px;
+    width: 20px;
+    bottom: 100px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper1-button-next {
+    position: relative;
+    right: -60px;
+    width: 20px;
+    right: -325px;
+    bottom: 150px;
+  }
+
+  .swiper2 {
+    width: 180px;
+  }
+
+  .swiper2-button-prev {
+    left: -115px;
+    width: 20px;
+    bottom: 70px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper2-button-next {
+    position: relative;
+    right: -60px;
+    width: 20px;
+    right: -270px;
+    bottom: 120px;
   }
 }
 
@@ -930,9 +1096,11 @@ body {
   }
 
   .text-headerr {
-    font-size: 8px;
+    font-size: 11px;
   }
-
+  .overalltext {
+    left: 0px;
+  }
   .imagetextmain {
     line-height: 100px;
     margin-bottom: 0px;
@@ -1044,29 +1212,67 @@ body {
     height: 100% !important;
   }
   .swiper {
-    width: 260px;
+    width: 390px;
   }
   .swiper-button-next {
     width: 25px !important;
-    right: -390px !important;
-    bottom: 83px !important;
+    right: -520px !important;
+    bottom: 112px !important;
   }
   .swiper-button-prev {
     width: 25px !important;
-    left: -61px !important;
-    bottom: 63px !important;
+    left: -160px !important;
+    bottom: 85px !important;
   }
   .swiperr {
-    width: 181px;
+    width: 231px;
   }
   .swiperr-button-next {
     width: 25px !important;
-    right: -290px !important;
-    bottom: 140px !important;
+    right: -350px !important;
+    bottom: 170px !important;
   }
   .swiperr-button-prev {
     width: 25px !important;
-    left: -130px !important;
-    bottom: 90px !important;
+    left: -157px !important;
+    bottom: 115px !important;
+  }
+
+  .swiper1 {
+    width: 380px;
+  }
+
+  .swiper1-button-prev {
+    left: -145px;
+    width: 30px;
+    bottom: 136px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper1-button-next {
+    position: relative;
+    right: -60px;
+    width: 30px;
+    right: -470px;
+    bottom: 190px;
+  }
+
+  .swiper2 {
+    width: 380px;
+  }
+
+  .swiper2-button-prev {
+    left: -145px;
+    width: 30px;
+    bottom: 136px;
+    transform: rotate(180deg);
+    position: relative;
+  }
+  .swiper2-button-next {
+    position: relative;
+    right: -60px;
+    width: 30px;
+    right: -470px;
+    bottom: 190px;
   }
 }
