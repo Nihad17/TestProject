@@ -376,11 +376,12 @@
           <img class="imgbutton" src="/app/images/buttonnext.png" />
         </div>
       </div>
+
       <div class="text-big">Линейка телевизоров LG OLED C1</div>
       <img class="img screen1" src="/app/images/screen2.png" alt="LG OLED C1" />
       <div class="general">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper1">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -442,10 +443,10 @@
 
           <!-- If we need navigation buttons -->
         </div>
-        <div class="swiper-button-prev">
+        <div class="swiper1-button-prev">
           <img class="imgbutton" src="/app/images/buttonnext.png" />
         </div>
-        <div class="swiper-button-next">
+        <div class="swiper1-button-next">
           <img class="imgbutton" src="/app/images/buttonnext.png" />
         </div>
       </div>
@@ -528,7 +529,7 @@
       <img class="img screen1" src="/app/images/screen4.png" alt="LG OLED A1" />
       <div class="general">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper2">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -590,10 +591,10 @@
 
           <!-- If we need navigation buttons -->
         </div>
-        <div class="swiper-button-prev">
+        <div class="swiper2-button-prev">
           <img class="imgbutton" src="/app/images/buttonnext.png" />
         </div>
-        <div class="swiper-button-next">
+        <div class="swiper2-button-next">
           <img class="imgbutton" src="/app/images/buttonnext.png" />
         </div>
       </div>
@@ -627,7 +628,7 @@
         // Optional parameters
         // If we need pagination
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination1",
         },
 
         slidesPerView: 3,
@@ -641,6 +642,42 @@
         // And if we need scrollbar
         scrollbar: {
           el: ".swiper-scrollbar",
+        },
+      });
+      const swiper1 = new Swiper(".swiper1", {
+        pagination: {
+          el: ".swiper1-pagination1",
+        },
+
+        slidesPerView: 3,
+        spaceBetween: 20,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper1-button-next",
+          prevEl: ".swiper1-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper1-scrollbar",
+        },
+      });
+      const swiper2 = new Swiper(".swiper2", {
+        pagination: {
+          el: ".swiper2-pagination",
+        },
+
+        slidesPerView: 3,
+        spaceBetween: 20,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper2-button-next",
+          prevEl: ".swiper2-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper2-scrollbar",
         },
       });
     </script>
